@@ -115,6 +115,24 @@ a {
 }
 
 #movies td {
-  padding: 20px
+  padding: 8px;
 }
 
+span {
+  opacity: 0
+}
+
+iframe:hover #hoverShow1 {
+ display: block;
+}
+
+#hoverShow1 {
+ display: block;
+ opacity: 1
+ position: center;
+ background-color: white;
+ width: 200px;
+ height: 50px;
+ left: 200px;
+ top: 100px;
+}
