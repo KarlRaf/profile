@@ -41,8 +41,8 @@ a {
 }
 
 .container {
-  width: 480px;
-  padding-left: 150px;
+  width: 100%;
+
   text-align: left;
 
 }
@@ -105,4 +105,83 @@ iframe:hover #hoverShow1 {
  height: 50px;
  left: 200px;
  top: 100px;
+}
+
+.split {
+  height: 100%;
+  width: 45%;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  overflow-x: hidden;
+  padding-left: 40px
+
+}
+
+.content {
+  padding-left: 25px;
+  padding-right: 50px;
+}
+
+.slide {
+  padding: 20px;
+  margin-top: 50px;
+}
+
+.card {
+  height: 175px;
+  width: 80vh;
+  color: black;
+  position: relative;
+  margin-top: 20px;
+  border-style: solid;
+  border-color: #b3d9ff;
+}
+.card-user {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  width: 40px;
+  border-radius: 50%;
+}
+.card-category {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  font-size: 15px;
+  text-transform: uppercase;
+}
+.card-description {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+}
+.card-description h2 {
+  font-size: 24px;
+}
+.card-description p {
+  font-size: 14px;
+  opacity: 0.7;
+  font-weight: lighter;
+}
+.card-link {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  z-index: 2;
+  background: black;
+  opacity: 0;
+}
+.card-link:hover {
+  opacity: 0.1;
+}
+
+.slider {
+  text-align: center;
+}
+
+.slinding {
+  display: inline-block;
 }
