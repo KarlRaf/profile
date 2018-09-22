@@ -1,189 +1,27 @@
 body {
   font-family: 'Mukta Mahee', sans-serif;
-  letter-spacing: 1px;
+  letter-spacing: 0.1rem;
   background-color: rgb(255,255,250)
 }
 
-h1 {
-  font-size: 4rem;
-  font-weight: 700;
+h1, h2, h3, h4, p {
+    margin: 0;
+}
+
+
+.header-title h1 {
+  font-size: 40px;
+  font-weight: 600;
 }
 
 li {
   list-style: none;
 }
 
-p {
-  text-align: justify;
-  font-size: 1rem;
-  font-weight: 400;
-}
-
-h2 {
-  font-weight: 600;
-  font-size: 1.5rem;
-}
-
-h3 {
-  font-size: 14px;
-  font-weight: 300;
-  text-align: left;
-  font-weight: bold;
-}
 
 a {
   text-decoration: none;
   color: black;
-}
-
-.about {
-  margin-top: -15px
-}
-
-.container {
-  width: 100%;
-
-  text-align: left;
-
-}
-
-@media (max-width: 960px) {
-  /* For a screen < 960px, this CSS will be read */
-  .container {
-    width: 700px;
-  }
-}
-@media (max-width: 720px) {
-  /* For a screen < 720px, this CSS will be read */
-  .container {
-    width: 500px;
-  }
-}
-@media (max-width: 540px) {
-  /* For a screen < 540px, this CSS will be read */
-  .container {
-    width: 300px;
-  }
-}
-
-.fa-twitter {
-  color: #F29559;
-}
-
-.fa-github {
-  color: #F29559;
-}
-
-.fa-linkedin {
-  color: #F29559;
-}
-
-#movies {
-  font-weight: 300;
-  font-size: 12px;
-  line-height: 1.6em;
-}
-
-#movies td {
-  padding: 8px;
-}
-
-span {
-  opacity: 0
-}
-
-iframe:hover #hoverShow1 {
- display: block;
-}
-
-#hoverShow1 {
- display: block;
- opacity: 1
- position: center;
- background-color: white;
- width: 200px;
- height: 50px;
- left: 200px;
- top: 100px;
-}
-
-.split {
-  height: 100%;
-  width: 45%;
-  position: fixed;
-  z-index: 1;
-  top: 0;
-  overflow-x: hidden;
-  padding-left: 40px
-
-}
-
-.content {
-  padding-left: 25px;
-  padding-right: 50px;
-}
-
-.slide {
-  padding: 20px;
-  margin-top: 50px;
-}
-
-.card {
-  height: 175px;
-
-  color: black;
-  position: relative;
-  margin-top: 20px;
-  border-style: solid;
-  border-color: #b3d9ff;
-}
-.card-user {
-  position: absolute;
-  right: 10px;
-  top: 10px;
-  width: 40px;
-  border-radius: 50%;
-}
-.card-category {
-  position: absolute;
-  top: 10px;
-  left: 10px;
-  font-size: 15px;
-  text-transform: uppercase;
-}
-.card-description {
-  position: absolute;
-  bottom: 10px;
-  left: 10px;
-}
-.card-description h2 {
-  font-size: 24px;
-}
-.card-description p {
-  font-size: 14px;
-  opacity: 0.7;
-  font-weight: lighter;
-}
-.card-link {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  right: 0;
-  width: 100%;
-  z-index: 2;
-  background: black;
-  opacity: 0;
-}
-.card-link:hover {
-  opacity: 0.1;
-}
-
-.slider {
-  text-align: center;
-}
-
-.slinding {
-  display: inline-block;
 }
 
 .container {
@@ -248,16 +86,40 @@ iframe:hover #hoverShow1 {
     box-shadow: 0 0 16px hsla(0,2%,84%,.3);
 }
 
+.header {
+    min-height: 69vh;
+    padding: 8vh 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+h1 {
+  margin: 0;
+}
+
+p {
+  margin: 0;
+}
+
+.header-paragraph p {
+    font-size: 16px;
+    color: #66666e;
+    font-weight: 400;
+    line-height: 1.7;
+}
 
 
 
-
-
-
-
-
-
-
+.btn-orange-plain {
+    padding: 12px 24px;
+    background: #fdac32;
+    color: #fff;
+    border-radius: 5px;
+    font-weight: 700;
+    font-size: 16px;
+    transition: all .1s ease;
+}
 
 
 
