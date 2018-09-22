@@ -130,7 +130,7 @@ iframe:hover #hoverShow1 {
 
 .card {
   height: 175px;
-  width: 80vh;
+
   color: black;
   position: relative;
   margin-top: 20px;
@@ -184,4 +184,12 @@ iframe:hover #hoverShow1 {
 
 .slinding {
   display: inline-block;
+}
+
+.container {
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
 }
