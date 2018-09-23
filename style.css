@@ -180,8 +180,8 @@ p {
 .project-img {
     background: #fff9f9;
     border-radius: 2px;
-    z-index: 1;
-    visibility: hidden;
+
+
     justify-content: center;
     align-items: center;
 }
@@ -243,9 +243,11 @@ p {
     box-shadow: 0 0 16px hsla(0,2%,84%,.3);
 }
 
-
-
-
-
+.project-img img {
+    visibility: hidden;
+    width: 200px;
+    height: 100px;
+    margin-right: 24px;
+}
 
 
