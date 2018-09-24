@@ -43,8 +43,8 @@
             <div class="left-column" style="flex: 0 0 30%;">
               <div class="sidebar">
                 <div class="sidebar-header">
-                  <h2 id="brand">Karl</h2>
-                  <p id="caption">Lot of things</p>
+                  <h2 id="brand">Hi I'm Karl</h2>
+                  <p id="caption">All things tech</p>
                 </div>
                 <div class="sidebar-links">
                   <div class="sidebar-link">
@@ -68,7 +68,7 @@
             <div class="right-column" style="flex: 0 0 70%;">
               <div class="header">
                 <div class="header-title">
-                  <h1>Hi I'm Karl</h1>
+                  <h1>Are you ready to launch Europe next unicorn?</h1>
                 </div>
                 <div class="header-paragraph" style=" margin-top: -50px;">
                   <p>Wannabe entrepreneur and junior fullstack dev, I learned to code at <a href="https://www.lewagon.com/" target="_blank">LeWagon</a> an amazing coding bootcamp. Currently student at <a href="https://www.em-lyon.com/" target="_blank">EMLyon Business School</a>.Before that I studied History and Law at La Sorbonne in Paris.</p>
@@ -182,6 +182,8 @@
         const button = document.querySelector(".btn-orange-transparent");
         const picture = document.querySelector(".sidebar-pic img");
 
+        const img = document.querySelector(".project-img")
+
 
         function isScolled() {
           return (brandTop + window.scrollY) > bannerHeight;
@@ -209,9 +211,9 @@
 
         }
 
-
         window.addEventListener('scroll', toggleButton);
         window.addEventListener('scroll', togglePicture);
+
       }
       togglingItems()
     </script>

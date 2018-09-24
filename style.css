@@ -12,6 +12,8 @@ h1, h2, h3, h4, p {
 .header-title h1 {
   font-size: 40px;
   font-weight: 600;
+  line-height: 1.4;
+  text-align: justify;
 }
 
 li {
@@ -51,7 +53,7 @@ a {
 
 #brand {
   font-weight: 400;
-  color: #fdac32;
+  color: #00A7E1;
   font-size: 24px;
 }
 
@@ -76,8 +78,8 @@ a {
 
 .btn-orange-transparent {
   padding: 8px 20px;
-  color: #fdac32;
-  border: 1px solid #fdac32;
+  color: #00A7E1;
+  border: 1px solid #00A7E1;
   border-radius: 5px;
   font-weight: 400;
   font-size: 14px;
@@ -125,7 +127,7 @@ p {
 
 .btn-orange-plain {
     padding: 12px 24px;
-    background: #fdac32;
+    background: #00A7E1;
     color: #fff;
     border-radius: 5px;
     font-weight: 700;
@@ -181,10 +183,9 @@ p {
 .project-img {
     background: #fff9f9;
     border-radius: 2px;
-
-
     justify-content: center;
     align-items: center;
+    visibility: hidden;
 }
 
 
@@ -229,7 +230,7 @@ p {
 
 .button-active {
   color: white;
-  background: #fdac32;
+  background: #00A7E1;
   opacity: 1;
 }
 
@@ -251,4 +252,10 @@ p {
     margin-right: 24px;
 }
 
-
+.project-img-active {
+    background: #fff9f9;
+    border-radius: 2px;
+    visibility: visible;
+    justify-content: center;
+    align-items: center;
+}
