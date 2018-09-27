@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-125697360-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-125697360-1');
+    </script>
+
+    <meta charset="utf-8">
+    <title>Karl RAF</title>
+    <meta name="description" content="Karl RAFIDIMANANA, dev, entrepreneur, and amazing humorist">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Mukta+Mahee:400,500,600,700,800" rel="stylesheet">
+    <link rel="apple-touch-icon" sizes="57x57" href="/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+  </head>
+  <body>
+    <div class="wrapper" style="width: 100%; position: relative;">
+      <div class="background-light">
+        <div class="page-container" style="width: 800px; margin: 0 auto;">
+          <div class="page-layout" style="display: flex">
+            <div class="left-column" style="flex: 0 0 30%;">
+              <div class="sidebar">
+                <div class="sidebar-header">
+                  <h2 id="brand">Hi I'm Karl</h2>
+                  <p id="caption">All things tech</p>
+                </div>
+                <div class="sidebar-links">
+                  <div class="sidebar-link">
+                    <a href="https://www.linkedin.com/in/karl-rafidimanana-058018137/" target="_blank" rel="noopener noreferrer">Linkedin</a>
+                  </div>
+                  <div class="sidebar-link">
+                    <a href="https://github.com/KarlRaf" target="_blank" rel="noopener noreferrer">Github</a>
+                  </div>
+                  <div class="sidebar-link">
+                    <a href="https://twitter.com/KarlRfdmna" target="_blank" rel="noopener noreferrer">Twitter</a>
+                  </div>
+                </div>
+                <div class="sidebar-cta">
+                  <a href="mailto:karlforbusiness@gmail.com?subject=Need to talk" class="btn-orange-transparent">Email</a>
+                </div>
+                <div class="sidebar-pic" style="padding-top: 15px;">
+                  <img src="https://avatars2.githubusercontent.com/u/37222324?s=400&u=fc4f70ec4f4e3f8b9336cf1cf589632bba0ab46a&v=4" alt="Karl" style="visibility: visible;">
+                </div>
+              </div>
+            </div>
+            <div class="right-column" style="flex: 0 0 70%;">
+              <div class="header">
+                <div class="header-title">
+                  <h1>Are you ready to launch Europe next unicorn?</h1>
+                </div>
+                <div class="header-paragraph" style=" margin-top: -50px;">
+                  <p>Wannabe entrepreneur and junior fullstack dev, I learned to code at <a href="https://www.lewagon.com/" target="_blank">LeWagon</a> an amazing coding bootcamp. Currently student at <a href="https://www.em-lyon.com/" target="_blank">EMLyon Business School</a>.Before that I studied History and Law at La Sorbonne in Paris.</p>
+                  <br>
+                  <p> You will read here, some articles mostly about tech and startups. Do not hesitate to share your opinion with me on twitter. But enough about me, I would love to hear about you and your projects. I am always happy to discuss new collaborations.</p>
+                </div>
+                <div class="header-button">
+                  <a href="mailto:karlforbusiness@gmail.com?subject=Hello moto" class="btn-orange-plain">drop me an email</a>
+                </div>
+                </div>
+                <br>
+                <h1>My latest blog post</h1>
+                <div class="header">
+                  {{content}}
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script>
+      function togglingItems() {
+
+        const brandTop = document.querySelector("#brand").getBoundingClientRect().top;
+        const bannerHeight = document.querySelector(".background-light").offsetHeight;
+
+        const button = document.querySelector(".btn-orange-transparent");
+        const picture = document.querySelector(".sidebar-pic img");
+
+        const img = document.querySelector(".project-img")
+
+
+        function isScolled() {
+          return (brandTop + window.scrollY) > bannerHeight;
+        }
+
+        function isSafari() {
+          return window.navigator.vendor.includes("Apple");
+        }
+
+        function toggleButton() {
+          // console.log(brandTop, window.scrollY, bannerHeight);
+          if (isScolled()) {
+            button.classList.add("button-active");
+          } else {
+            button.classList.remove("button-active");
+          }
+        }
+
+        function togglePicture() {
+          if (isScolled() && isSafari()) {
+            picture.style.visibility = "hidden";
+          } else {
+            picture.style.visibility = "visible";
+          }
+
+        }
+
+        window.addEventListener('scroll', toggleButton);
+        window.addEventListener('scroll', togglePicture);
+
+      }
+      togglingItems()
+    </script>
+  </body>
+</html>
+
+
+
+
+
