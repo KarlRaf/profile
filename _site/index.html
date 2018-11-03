@@ -50,7 +50,24 @@
     <meta name="theme-color" content="#ffffff">
   </head>
   <body>
-    <div class="wrapper" style="width: 100%; position: relative;">
+
+
+    <div id='container'>
+      <header>
+        <h4 class="animated fadeIn">Essentials:</h4>
+        <h1 class="animated fadeIn">Karl Rafidimanana<br />French<span id="hacker"> slasheur</span></h1>
+        <h2 class="animated fadeIn">Currently residing in Paris, and on the lookout for my next opportunity.</h2>
+        <a class="ghost animated fadeIn" href="https://www.linkedin.com/in/karl-rafidimanana-058018137/" target="_blank">My Background</a><a class="blue animated fadeIn" href="mailto:karlforbusiness@gmail.com?subject=Need to talk" target="_blank">Get in Touch</a>
+      </header>
+
+      <section id="background" class="animated fadeIn">
+        <h4>Background:</h4>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut, nesciunt, aperiam libero praesentium exercitationem, doloribus eaque debitis nihil, atque esse eius? Omnis nemo ad architecto, quam harum et modi, aut? <b><a href="#">Somewhere</a></b> and <b><a href="#" target="_blank">somewhere</a></b>.</p>
+        <p>See a more formal resume on <a href="https://www.linkedin.com/in/karl-rafidimanana-058018137/" class="link" target="_blank">LinkedIn</a>, read impulsive thoughts on <a href="https://twitter.com/KarlRfdmna" class="link" target="_blank">Twitter</a>, get in touch with me via <a href="mailto:karlforbusiness@gmail.com?subject=Need to talk" class="link">E-mail</a>, follow me in my code journey <a href="https://github.com/KarlRaf" class="link" target="_blank">Github</a><br> or just let's grab a beer.</p>
+      </section>
+
+    </div>
+   <!--  <div class="wrapper" style="width: 100%; position: relative;">
       <div class="background-light">
         <div class="page-container" style="width: 800px; margin: 0 auto;">
           <div class="page-layout" style="display: flex">
@@ -97,16 +114,16 @@
                 <h1>My latest blog post</h1>
                 <div class="header">
                   
-<ul>
+<!-- <ul>
 
     <li>
-      <br />
+      <br>
       <div class="header-title">
         <h1><a href="/2018/09/27/third-post.html">My third Post</a></h1>
       </div>
       <span class="postDate">Sep 27, 2018</span>
       <div class="header-paragraph">
-        <br />
+        <br>
         <p><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore fugit praesentium enim asperiores porro natus nesciunt nemo quaerat saepe voluptatem, nulla assumenda quibusdam adipisci explicabo quod numquam sunt, nam maiores.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo id ipsum pariatur nesciunt repudiandae neque impedit provident sequi fugiat voluptates cupiditate corrupti placeat voluptate voluptatem, ipsa magnam delectus, rem hic.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem voluptatem deleniti, in quaerat facere repellendus voluptas dolorum explicabo error consectetur quae sunt incidunt vero, dignissimos accusantium a fugiat cum optio.</p>
 </p>
         <p><a href="/2018/09/27/third-post.html">Read more</a></p>
@@ -115,13 +132,13 @@
     </li>
 
     <li>
-      <br />
+      <br>
       <div class="header-title">
         <h1><a href="/2018/09/27/second-post.html">My second Post</a></h1>
       </div>
       <span class="postDate">Sep 27, 2018</span>
       <div class="header-paragraph">
-        <br />
+        <br>
         <p><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore fugit praesentium enim asperiores porro natus nesciunt nemo quaerat saepe voluptatem, nulla assumenda quibusdam adipisci explicabo quod numquam sunt, nam maiores.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo id ipsum pariatur nesciunt repudiandae neque impedit provident sequi fugiat voluptates cupiditate corrupti placeat voluptate voluptatem, ipsa magnam delectus, rem hic.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem voluptatem deleniti, in quaerat facere repellendus voluptas dolorum explicabo error consectetur quae sunt incidunt vero, dignissimos accusantium a fugiat cum optio.</p>
 </p>
         <p><a href="/2018/09/27/second-post.html">Read more</a></p>
@@ -130,13 +147,13 @@
     </li>
 
     <li>
-      <br />
+      <br>
       <div class="header-title">
         <h1><a href="/2018/09/27/first-post.html">My First Post</a></h1>
       </div>
       <span class="postDate">Sep 27, 2018</span>
       <div class="header-paragraph">
-        <br />
+        <br>
         <p><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore fugit praesentium enim asperiores porro natus nesciunt nemo quaerat saepe voluptatem, nulla assumenda quibusdam adipisci explicabo quod numquam sunt, nam maiores.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo id ipsum pariatur nesciunt repudiandae neque impedit provident sequi fugiat voluptates cupiditate corrupti placeat voluptate voluptatem, ipsa magnam delectus, rem hic.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem voluptatem deleniti, in quaerat facere repellendus voluptas dolorum explicabo error consectetur quae sunt incidunt vero, dignissimos accusantium a fugiat cum optio.</p>
 </p>
         <p><a href="/2018/09/27/first-post.html">Read more</a></p>
@@ -144,7 +161,7 @@
 
     </li>
 
-</ul>
+</ul> -->
 
 
                 </div>
@@ -153,51 +170,109 @@
           </div>
         </div>
       </div>
-    </div>
+    </div> -->
     <script>
-      function togglingItems() {
 
-        const brandTop = document.querySelector("#brand").getBoundingClientRect().top;
-        const bannerHeight = document.querySelector(".background-light").offsetHeight;
+      var images = new Array
+                      images[1] = "https://media.giphy.com/media/14vGP6boIKc0XS/giphy.gif",
+                      images[2] = "https://media.giphy.com/media/JCE28WbWNb2Mw/giphy.gif",
+                      images[3] = "https://media.giphy.com/media/r46rUK80uzTuo/giphy.gif",
+                      images[4] = "https://media.giphy.com/media/9rpJFXstNnkLm/giphy.gif",
+                      images[5] = "https://media.giphy.com/media/BtjN9NRPgzr1e/giphy.gif",
+                      images[6] = "https://media.giphy.com/media/9g3rqWnPbUqOI/giphy.gif",
+                      images[7] = "https://media.giphy.com/media/8DlReDCEOzza0/giphy.gif";
+                      images[8] = "https://media.giphy.com/media/We6320wXGTvwY/giphy.gif";
+                      images[9] = "https://media.giphy.com/media/ZszQOKH7JWgg/giphy.gif";
+                      images[10] = "https://media.giphy.com/media/135HorrA3p7x04/giphy.gif";
+                      images[11] = "https://media.giphy.com/media/1m7jcTQUzlvDa/giphy.gif";
+                      images[12] = "https://media.giphy.com/media/whQyuuCi4FHpe/giphy.gif";
+                      images[13] = "https://media.giphy.com/media/zmKgeNxKAX22k/giphy.gif";
+                      images[14] = "https://media.giphy.com/media/26BkMadvsqSlAJdkY/giphy.gif";
 
-        const button = document.querySelector(".btn-orange-transparent");
-        const picture = document.querySelector(".sidebar-pic img");
-
-        const img = document.querySelector(".project-img")
 
 
-        function isScolled() {
-          return (brandTop + window.scrollY) > bannerHeight;
-        }
+        var body = document.getElementsByTagName('body')[0];
+        var hacker = document.getElementById("hacker");
 
-        function isSafari() {
-          return window.navigator.vendor.includes("Apple");
-        }
+          hacker.onmouseover = function(){
 
-        function toggleButton() {
-          // console.log(brandTop, window.scrollY, bannerHeight);
-          if (isScolled()) {
-            button.classList.add("button-active");
-          } else {
-            button.classList.remove("button-active");
+            ga('send', 'event', { eventCategory: 'tracking', eventAction: 'hover', eventLabel: 'gif'});
+
+
+
+              // body.classList.add('bg-gif');
+              var imgCount = 14;
+              var randomCount = Math.floor(Math.random() * imgCount) + 1;
+
+              body.style.background = "linear-gradient(rgba(255, 255, 255, 0.88), rgba(255, 255, 255, 0.88)), url(" + images[randomCount] +") scroll no-repeat center/cover";
           }
-        }
 
-        function togglePicture() {
-          if (isScolled() && isSafari()) {
-            picture.style.visibility = "hidden";
-          } else {
-            picture.style.visibility = "visible";
+          hacker.onmouseout = function(){
+
+              body.style.background = "";
           }
 
-        }
+          console.log("%c karlraf.co ","background: #4A90E2; color: #ffffff; font-size: 18px; border-radius: 3px;"),console.log("%c want to hire me \ud83d\ude80 ? ","background: #f4f4f2; font-size: 14px; border-radius: 3px;"),console.log(""),console.log("%c > hireMe() ","background: #444444; color: #ffffff; font-size: 14px; border-radius: 3px; font-family: courier;");
 
-        window.addEventListener('scroll', toggleButton);
-        window.addEventListener('scroll', togglePicture);
+          function hireMe() {
+            console.log("\ud83d\udca5\ud83d\udca5\ud83d\udca5");
+            window.location.replace("https://www.linkedin.com/in/karl-rafidimanana-058018137/");
+            };
 
-      }
-      togglingItems()
+
+
+      // function togglingItems() {
+
+      //   const brandTop = document.querySelector("#brand").getBoundingClientRect().top;
+      //   const bannerHeight = document.querySelector(".background-light").offsetHeight;
+
+      //   const button = document.querySelector(".btn-orange-transparent");
+      //   const picture = document.querySelector(".sidebar-pic img");
+
+      //   const img = document.querySelector(".project-img")
+
+
+      //   function isScolled() {
+      //     return (brandTop + window.scrollY) > bannerHeight;
+      //   }
+
+      //   function isSafari() {
+      //     return window.navigator.vendor.includes("Apple");
+      //   }
+
+      //   function toggleButton() {
+      //     // console.log(brandTop, window.scrollY, bannerHeight);
+      //     if (isScolled()) {
+      //       button.classList.add("button-active");
+      //     } else {
+      //       button.classList.remove("button-active");
+      //     }
+      //   }
+
+      //   function togglePicture() {
+      //     if (isScolled() && isSafari()) {
+      //       picture.style.visibility = "hidden";
+      //     } else {
+      //       picture.style.visibility = "visible";
+      //     }
+
+      //   }
+
+      //   window.addEventListener('scroll', toggleButton);
+      //   window.addEventListener('scroll', togglePicture);
+
+      // }
+      // togglingItems()
     </script>
+
+    <script type="application/javascript">
+      function getIP(json) {
+        console.log("🌍 Your IP address is: ", json.ip);
+      }
+    </script>
+
+    <script type="application/javascript" src="https://api.ipify.org?format=jsonp&callback=getIP"></script>
+
   </body>
 </html>
 
